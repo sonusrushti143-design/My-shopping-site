@@ -1,1 +1,92 @@
 # My-shopping-site
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Shopping Store</title>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+}
+
+button {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Online Store</h1>
+</header>
+
+<div class="products">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/150">
+    <h3>Product 1</h3>
+    <p>₹499</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/150">
+    <h3>Product 2</h3>
+    <p>₹799</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/150">
+    <h3>Product 3</h3>
+    <p>₹999</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+</div>
+
+<script>
+function addToCart() {
+  alert("Product added to cart!");
+}
+</script>
+
+</body>
+</html>
